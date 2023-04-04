@@ -1,0 +1,95 @@
+body {
+  background-color: #282a36; 
+  font-family: 'Inter', sans-serif;
+  padding: 2.5rem;
+}
+
+p, h1 {
+  color: #f8f8f2;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #f8f8f2;
+}
+
+a:hover {
+  color: #bd93f9;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+button {
+    display: block;
+    margin-bottom: 20px;
+    min-width: 10rem;   
+    font-size: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #171c28;
+    color: #f0f6fc;
+    border: 1px solid #6633ff;
+    border-radius: 8px;
+}
+
+.button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    color: #6633ff;
+  }
+
+@media (max-width: 768px) {
+    .styled-button {
+        max-width: 7rem;
+    }
+}
+
+#page-title {
+  text-align: center;
+  margin: 5vh 0 15vh 0;
+}
+
+.button-group {
+  display: block;
+  margin-top: 5vh;
+}
+
+#page-footer {
+  position: fixed;
+  bottom: 0;
+  right: 1%;
+  padding: 0.3rem;
+}
+
+#page-footer-left {
+  position: fixed;
+  bottom: 10%;
+  left: 2%;
+}
+
+#logo {
+  position: fixed;
+  opacity: 0.5;
+  left: 40%;
+  top: 30%;
+  height: 300px;
+  width: 300px;
+}
+
+@media (max-width: 768px) {
+  #page-footer, #page-footer-left, #logo {
+    position: static;
+  }
+}
+
